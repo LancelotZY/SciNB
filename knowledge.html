@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+   <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science without Boundry</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+            background-size: cover;
+        }
+
+        img{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+    <link rel="stylesheet" href="knowledge-style.css">
+</head>
+
+<body>
+    <img src="知识.jpg">
+
+    
+
+    <!--页边选择-->
+    <header>
+        <section id="sec1">
+            <h1>硬核科普</h1>
+            <ul>
+                <!-- <li onclick="updateFooter('全部')"><a href ="#">全部</a></li>-->
+                <li onclick="updateFooter('全部') ; showContent('全部')"><a href ="#">全部</a></li>
+                <!-- <li onclick="updateFooter('数学')"><a href ="#">数学</a></li> -->
+                <li onclick="updateFooter('数学') ; showContent('数学')"><a href ="#">数学</a></li>
+                <!-- <li onclick="updateFooter('物理')"><a href = "#" >物理</a></li>-->
+                <li onclick="updateFooter('物理') ; showContent('物理')"><a href = "#" >物理</a></li>
+                <li onclick="updateFooter('化学') ; showContent('化学')"><a href = "#" >化学</a></li>
+                <li onclick="updateFooter('生物') ; showContent('生物')"><a href = "#" >生物</a></li>
+                <li onclick="updateFooter('天文') ; showContent('天文')"><a href = "#" >天文</a></li>
+                <li onclick="updateFooter('文学/其他') ; showContent('文学/其他')"><a href = "#" >文学/其他</a></li>
+            </ul>
+        </section>
+    </header>
+    
+    <!--主体内容-->
+
+    <main>
+        <!--上方显示-->
+        <section id="sec2">
+            <strong id = "content1">无论是文学作品还是理学符号，都是优美的，因为他们给了我们描述我们眼中世界的能力</strong>
+            <!--<script src="knowledge-script.js"></script>-->
+        </section>
+        <!--内容部分-->
+        
+        
+        <section class = 'articles' id="all">
+            <ul>
+                <li><a href=#>物理——析万物之理</a></li>
+                <li><a href=#>数学——神的语言</a></li>
+            </ul>
+        </section>
+        
+        <section class = 'articles' id="math">
+            <ul>
+                <li><a href=#>微积分的起源</a></li>
+                <li><a href=#>为什么要学习数学？</a></li>
+            </ul>
+        </section> 
+
+        <section class = 'articles' id = 'physic'>
+            <ul>
+                <li><a href = #>物理——析万物之理</a></li>
+                <li><a href = #>当太阳失去光芒</a></li>
+            </ul>
+        </section>
+
+        <section class = 'articles' id = 'chem'>
+            <ul>
+                <li><a href = #>ccccc</a></li>
+                <li><a href = #>ccccc</a></li>
+            </ul>
+        </section>
+
+        <section class = 'articles' id = 'bio'>
+            <ul>
+                <li><a href = #>bbbbbb</a></li>
+                <li><a href = #>bbbbbb</a></li>
+            </ul>
+        </section>
+
+        <section class = 'articles' id = 'astro'>
+            <ul>
+                <li><a href = #>aaaaaa</a></li>
+                <li><a href = #>aaaaaa</a></li>
+            </ul>
+        </section>
+
+        <section class = 'articles' id = 'other'>
+            <ul>
+                <li><a href = #>oooooo</a></li>
+                <li><a href = #>oooooo</a></li>
+            </ul>
+        </section>
+
+        <!--底部显示-->
+        <section id = "sec4">
+            <h2 id = "content2">全部</h2>
+            
+        </section>
+
+    </main>
+
+    <script src="knowledge-script.js"></script>
+    
+</body>
