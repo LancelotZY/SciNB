@@ -1,0 +1,144 @@
+ body{
+   color: white;
+ }
+
+/*标题排版*/
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   writing-mode: horizontal-tb;
+}
+
+h1{
+   font-size: 5vw;
+   margin: 0;
+}
+
+strong{
+   margin: 10px 0;
+}
+
+#H1, #H2{
+   flex: 3; /* 不伸缩 */
+    
+}
+
+#s1 {
+   flex:20; /* 使 s1 占据剩余空间 */
+   text-align: center; /* 水平居中文本 */
+}
+
+
+/*主体排版*/
+main{
+   background-color: rgba(0, 0, 0, 0.6);
+   margin: 3vw 5vw;
+   position: relative;
+   z-index: 1;
+}
+
+.clearfix::after{
+   content: "";
+   display: table;
+   clear:both;
+}
+
+h2{
+   font-size: 45px;
+   color: white;
+   margin: 0 0 4.5vw 0;
+}
+
+a{
+   color: white;
+   text-decoration: none;
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+section{
+   text-align: center;
+   margin: 0 0 0 0 ;
+   position: relative;
+}
+
+
+#sec1{
+   background-image:url("/sciNB/科普.jpg") ;
+   height: 25%;
+   width: 75%;
+   background-size: cover;
+   background-position: center;
+   float:left
+}
+
+#sec2{
+   background-image:url("/sciNB/小说.jpg") ;
+   height: 25%;
+   width: 75%;
+   background-size: cover;
+   background-position: center;
+   float:right
+}
+
+#sec3{
+   background-image:url("/sciNB/清朗.jpg") ;
+   height: 25%;
+   width: 75%;
+   background-size: cover;
+   background-position: center;
+   float:left
+}
+
+#sec4{
+   background-image:url("/sciNB/问道.jpg") ;
+   height: 25%;
+   width: 75%;
+   background-size: cover;
+   background-position: center;
+   float:right
+}
+
+footer{
+   margin: 0;
+   background-color: black;
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+
+}
+
+#inc{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+#sec5,#sec6{
+   width:50%
+}
+
+#sec5::after{
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   border-left: 2px solid white;
+   margin-right: 10px;
+
+}
+
+#sec6 ul{
+   list-style-type: none;
+}
+
+footer #sec7{
+   align-self: center;
+}
