@@ -67,7 +67,7 @@ section{
 
 
 #sec1{
-   background-image:url("/sciNB/科普.jpg") ;
+   background-image:url("/SciNB/科普.jpg") ;
    height: 25%;
    width: 75%;
    background-size: cover;
@@ -76,7 +76,7 @@ section{
 }
 
 #sec2{
-   background-image:url("/sciNB/小说.jpg") ;
+   background-image:url("/SciNB/小说.jpg") ;
    height: 25%;
    width: 75%;
    background-size: cover;
@@ -85,7 +85,7 @@ section{
 }
 
 #sec3{
-   background-image:url("/sciNB/清朗.jpg") ;
+   background-image:url("/SciNB/清朗.jpg") ;
    height: 25%;
    width: 75%;
    background-size: cover;
@@ -94,7 +94,7 @@ section{
 }
 
 #sec4{
-   background-image:url("/sciNB/问道.jpg") ;
+   background-image:url("/SciNB/问道.jpg") ;
    height: 25%;
    width: 75%;
    background-size: cover;
@@ -141,4 +141,5 @@ footer{
 
 footer #sec7{
    align-self: center;
+
 }
