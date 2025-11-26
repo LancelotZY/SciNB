@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+   <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science without Boundry</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+            background-size: cover;
+        }
+
+        img{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+    <link rel="stylesheet" href="scifi-style.css">
+</head>
+
+<body>
+    <img src="小说.jpg">
+
+    <header>
+        <section id="sec1">
+            <h1>科幻小说</h1>
+            <ul>
+                <li onclick="updateFooter('全部')"><a>全部</a></li>
+                <li onclick="updateFooter('本周热点')"><a>本周热点</a></li>
+                <li onclick="updateFooter('原创文学')"><a>原创文学</a></li>
+                <li onclick="updateFooter('经典读物')"><a>经典读物</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <!--开头引体题-->
+        <section id = "sec2">
+            <strong id="content1">对于未知的好奇与真理的执着，让我们拥有不断前进的动力</strong>
+        </section>
+
+        <!--内容-->
+        <section id = "sec3">
+            <li ><a href="孤岛--越.htm" target="_blank">孤岛--越</a></li>
+            <li><a href="我这一无是处的人生啊--越.htm" target="_blank">我这一无是处的人生啊--越</a></li>
+        </section>
+        <!--底部-->
+        <section id="sec4">
+            <strong id = "content2">全部</strong>
+        </section>
+
+    </main>
+
+    <script src="scifi-script.js"></script>
+    
+</body>
