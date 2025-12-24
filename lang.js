@@ -22,6 +22,16 @@ const I18N = {
     FOOT_CONTACT: "联系方式",
     FOOT_OPEN: "||本网站所有内容致力于开源开放，商业行为将不被提倡||",
 
+    /**konwledge part */
+    KONWL_TITLE: "硬核科普",
+    KONWL_TAB_ALL: "全部",
+    KONWL_TAB_PHYS: "物理",
+    KONWL_TAB_MATH: "数学",
+    KONWL_TAB_CHEM: "化学",
+    KONWL_TAB_BIOL: "生物",
+    KONWL_TAB_ASRT: "天文",
+    KONWL_TAB_LITE: "文学/其他",
+
     /**scifi part */
     SCIFI_TITLE: "科幻小说",
     SCIFI_TAB_ALL: "全部",
@@ -55,6 +65,16 @@ const I18N = {
     FOOT_COLLAB_TEXT: "If you love open knowledge sharing, sci-fi stories,<br>or helping others learn—join us!",
     FOOT_CONTACT: "Contact",
     FOOT_OPEN: "||This site is open and free; commercial use is discouraged||",
+
+    /**konwledge part */
+    KONWL_TITLE: "Pop Science",
+    KONWL_TAB_ALL: "ALL",
+    KONWL_TAB_PHYS: "Physics",
+    KONWL_TAB_MATH: "Mathematics",
+    KONWL_TAB_CHEM: "Chemistry",
+    KONWL_TAB_BIOL: "Biology",
+    KONWL_TAB_ASRT: "Astronomy",
+    KONWL_TAB_LITE: "Literature/Other",
 
     /**scifi part */
     SCIFI_TITLE: "Sci-Fi",
@@ -128,3 +148,4 @@ function initI18n() {
 // 让它自动运行（前提：你用 defer 引入，保证 DOM 已解析）
 window.I18N = I18N;
 initI18n();
+
