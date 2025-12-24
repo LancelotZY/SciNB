@@ -143,3 +143,18 @@ footer #sec7{
    align-self: center;
 
 }
+
+.lang-btn{
+  margin-left: 12px;
+  padding: 6px 10px;
+  border: 1px solid white;
+  background: rgba(0,0,0,0.35);
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.lang-btn:hover{
+  background: rgba(0,0,0,0.55);
+}
+
