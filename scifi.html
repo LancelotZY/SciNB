@@ -28,7 +28,7 @@
 
     <header>
         <section id="sec1">
-            <h1>科幻小说</h1>
+            <h1 data-i18n="SCIFI_TITLE">科幻小说</h1>
             <ul>
                 <li onclick="updateFooter('all')"><a data-i18n="SCIFI_TAB_ALL">全部</a></li>
                 <li onclick="updateFooter('hot')"><a data-i18n="SCIFI_TAB_HOT">本周热点</a></li>
@@ -41,7 +41,7 @@
     <main>
         <!--开头引体题-->
         <section id = "sec2">
-            <strong id="content1">对于未知的好奇与真理的执着，让我们拥有不断前进的动力</strong>
+            <strong id="content1" data-i18n="SCIFI_DESC_ALL">对于未知的好奇与真理的执着，让我们拥有不断前进的动力</strong>
         </section>
 
         <!--内容-->
@@ -51,13 +51,16 @@
         </section>
         <!--底部-->
         <section id="sec4">
-            <strong id = "content2">全部</strong>
+            <strong id = "content2" data-i18n="SCIFI_TAB_ALL">全部</strong>
         </section>
 
     </main>
 
-    <script src="/SciNB/scifi-script.js"></script>
+   <script defer src="/SciNB/lang.js"></script> 
+   <script defer src="/SciNB/scifi-script.js"></script>
+   
     
 
 </body>
+
 
