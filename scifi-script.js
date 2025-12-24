@@ -1,24 +1,37 @@
-function updateFooter (subject){
-    let element1 = document.getElementById('content1')
-    let element2 = document.getElementById('content2')
-    
+function getCurrentLang() {
+  return localStorage.getItem("site_lang") || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
+}
 
-    switch (subject){
-        case "全部":
-            element1.textContent = "对于未知的好奇与真理的执着，让我们拥有不断前进的动力";
-            element2.textContent = '全部';
-            break;
-        case '本周热点':
-            element1.textContent = "让我们看看这周，探索欲将我们引向何方吧";
-            element2.textContent = '本周热点';
-            break;
-        case '原创文学':
-            element1.textContent = "在这里我们欢迎每一个拥有创作欲的笔者展示他们心目中的璨烂星河";
-            element2.textContent = '原创文学';
-            break;
-        case '经典读物':
-            element1.textContent = '当时间冲刷过尘世，带走了悬浮的尘埃，留下了闪耀的宝藏';
-            element2.textContent = '经典读物';
-            break;
-    }
+// 这里假设 lang.js 暴露了 window.I18N（我后面会教你怎么暴露）
+function t(key) {
+  const lang = getCurrentLang();
+  const dict = (window.I18N && window.I18N[lang]) ? window.I18N[lang] : {};
+  return dict[key] || key;
+}
+
+function updateFooter(subjectKey) {
+  const element1 = document.getElementById('content1');
+  const element2 = document.getElementById('content2');
+
+  switch (subjectKey) {
+    case "all":
+      element1.innerHTML = t("SCIFI_DESC_ALL");   // 用 innerHTML 以防你以后想加 <br>
+      element2.textContent = t("SCIFI_TAB_ALL");
+      break;
+
+    case "hot":
+      element1.innerHTML = t("SCIFI_DESC_HOT");
+      element2.textContent = t("SCIFI_TAB_HOT");
+      break;
+
+    case "original":
+      element1.innerHTML = t("SCIFI_DESC_ORIGINAL");
+      element2.textContent = t("SCIFI_TAB_ORIGINAL");
+      break;
+
+    case "classic":
+      element1.innerHTML = t("SCIFI_DESC_CLASSIC");
+      element2.textContent = t("SCIFI_TAB_CLASSIC");
+      break;
+  }
 }
