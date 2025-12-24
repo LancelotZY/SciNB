@@ -87,84 +87,12 @@
             <h4 data-i18n="FOOT_OPEN">||本网站所有内容致力于开源开放，商业行为将不被提倡||</h4>
         </section>
     </footer>
- <script>
-  // 1) Translation dictionary
-  const I18N = {
-    zh: {
-      H1: "知识",
-      H2: "无界",
-      SLOGAN: "|HINC ITUR AD ASTRA|",
-
-      NAV_POPSCI: "硬核科普",
-      NAV_POPSCI_SUB: "你好！探索世界的无畏勇士",
-      NAV_SCIFI: "科幻小说",
-      NAV_SCIFI_SUB: "让好奇驱动思想飞向远方",
-      NAV_CLEAN: "清朗学术",
-      NAV_CLEAN_SUB: "安得广厦千万间，大庇天下寒士俱欢颜",
-      NAV_QA: "问道于盲",
-      NAV_QA_SUB: "圣人之所圣也，只是好学下问",
-
-      FOOT_COLLAB: "投稿&合作",
-      FOOT_COLLAB_TEXT: "如果你也致力于公益的知识传播，有趣的科幻故事，<br>或者帮助解答问题的热情的话，欢迎加入我们！",
-      FOOT_CONTACT: "联系方式",
-      FOOT_OPEN: "||本网站所有内容致力于开源开放，商业行为将不被提倡||",
-    },
-    en: {
-      H1: "Knowledge",
-      H2: "Unbounded",
-      SLOGAN: "|HINC ITUR AD ASTRA|",
-
-      NAV_POPSCI: "Pop Science",
-      NAV_POPSCI_SUB: "Hello, brave explorer of the world!",
-      NAV_SCIFI: "Sci-Fi",
-      NAV_SCIFI_SUB: "Let curiosity send your mind farther",
-      NAV_CLEAN: "Academic Integrity",
-      NAV_CLEAN_SUB: "Let there be shelter for every scholar",
-      NAV_QA: "Q&A",
-      NAV_QA_SUB: "The wise ask with humility",
-
-      FOOT_COLLAB: "Contribute & Collaborate",
-      FOOT_COLLAB_TEXT: "If you love open knowledge sharing, sci-fi stories,<br>or helping others learn—join us!",
-      FOOT_CONTACT: "Contact",
-      FOOT_OPEN: "||This site is open and free; commercial use is discouraged||",
-    }
-  };
-
-  function applyLang(lang) {
-    const dict = I18N[lang] || I18N.zh;
-
-    // replace all elements that have data-I18n
-    document.querySelectorAll("[data-I18n]").forEach(el => {
-      const key = el.getAttribute("data-I18n");
-      if (!dict[key]) return;
-
-      // If string contains <br>, use innerHTML; otherwise use textContent
-      if (String(dict[key]).includes("<")) el.innerHTML = dict[key];
-      else el.textContent = dict[key];
-    });
-
-    // button label
-    const btn = document.getElementById("langToggle");
-    if (btn) btn.textContent = (lang === "zh") ? "EN" : "中文";
-
-    localStorage.setItem("site_lang", lang);
-    document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
-  }
-
-  // init
-  const saved = localStorage.getItem("site_lang");
-  const browserPref = (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en";
-  applyLang(saved || browserPref);
-
-  // toggle
-  document.getElementById("langToggle")?.addEventListener("click", () => {
-    const current = localStorage.getItem("site_lang") || browserPref;
-    applyLang(current === "zh" ? "en" : "zh");
-  });
-</script>
+    
+    <script defer src="/SciNB/lang.js"></script>
 </body>
 
 </html>
+
 
 
 
