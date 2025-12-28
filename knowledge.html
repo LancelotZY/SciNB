@@ -34,15 +34,15 @@
             <h1 data-i18n="KNOWL_TITLE">硬核科普</h1>
             <ul>
                 <!-- <li onclick="updateFooter('全部')"><a href ="#">全部</a></li>-->
-                <li onclick="updateFooter('全部') ; showContent('全部')"><a data-i18n="KNOWL_TAB_ALL">全部</a></li>
+                <li onclick="updateFooter('all') ; showContent('all')"><a data-i18n="KNOWL_TAB_ALL">全部</a></li>
                 <!-- <li onclick="updateFooter('数学')"><a href ="#">数学</a></li> -->
-                <li onclick="updateFooter('数学') ; showContent('数学')"><a data-i18n="KNOWL_TAB_MATH">数学</a></li>
+                <li onclick="updateFooter('math') ; showContent('math')"><a data-i18n="KNOWL_TAB_MATH">数学</a></li>
                 <!-- <li onclick="updateFooter('物理')"><a href = "#" >物理</a></li>-->
-                <li onclick="updateFooter('物理') ; showContent('物理')"><a data-i18n="KNOWL_TAB_PHYS" >物理</a></li>
-                <li onclick="updateFooter('化学') ; showContent('化学')"><a data-i18n="KNOWL_TAB_CHEM" >化学</a></li>
-                <li onclick="updateFooter('生物') ; showContent('生物')"><a data-i18n="KNOWL_TAB_BIOL" >生物</a></li>
-                <li onclick="updateFooter('天文') ; showContent('天文')"><a data-i18n="KNOWL_TAB_ASRT" >天文</a></li>
-                <li onclick="updateFooter('文学/其他') ; showContent('文学/其他')"><a data-i18n="KNOWL_TAB_LITE" >文学/其他</a></li>
+                <li onclick="updateFooter('phys') ; showContent('phys')"><a data-i18n="KNOWL_TAB_PHYS" >物理</a></li>
+                <li onclick="updateFooter('chem') ; showContent('chem')"><a data-i18n="KNOWL_TAB_CHEM" >化学</a></li>
+                <li onclick="updateFooter('biol') ; showContent('biol')"><a data-i18n="KNOWL_TAB_BIOL" >生物</a></li>
+                <li onclick="updateFooter('asrt') ; showContent('asrt')"><a data-i18n="KNOWL_TAB_ASRT" >天文</a></li>
+                <li onclick="updateFooter('lite') ; showContent('lite')"><a data-i18n="KNOWL_TAB_LITE" >文学/其他</a></li>
             </ul>
         </section>
     </header>
@@ -52,7 +52,7 @@
     <main>
         <!--上方显示-->
         <section id="sec2">
-            <strong id = "content1">无论是文学作品还是理学符号，都是优美的，因为他们给了我们描述我们眼中世界的能力</strong>
+            <strong id = "content1" data-i18n="KNOWL_DESC_ALL">无论是文学作品还是理学符号，都是优美的，因为他们给了我们描述我们眼中世界的能力</strong>
             <!--<script src="knowledge-script.js"></script>-->
         </section>
         <!--内容部分-->
@@ -109,7 +109,7 @@
 
         <!--底部显示-->
         <section id = "sec4">
-            <h2 id = "content2">全部</h2>
+            <h2 id = "content2" data-i18n="KNOWL_TAB_ALL">全部</h2>
             
         </section>
 
@@ -120,5 +120,6 @@
     
 
 </body>
+
 
 
