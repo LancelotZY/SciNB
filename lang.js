@@ -81,7 +81,7 @@ const I18N = {
     KNOWL_TAB_MATH: "Mathematics",
     KNOWL_TAB_CHEM: "Chemistry",
     KNOWL_TAB_BIOL: "Biology",
-    KNOWL_TAB_ASTR: "ASTRonomy",
+    KNOWL_TAB_ASTR: "Astronomy",
     KNOWL_TAB_LITE: "Literature/Other",
 
     KNOWL_DESC_ALL:"Literature and science share beauty: they let us describe the world.",
@@ -164,6 +164,7 @@ function initI18n() {
 // 让它自动运行（前提：你用 defer 引入，保证 DOM 已解析）
 window.I18N = I18N;
 initI18n();
+
 
 
 
