@@ -40,8 +40,8 @@ function updateFooter(subjectKey) {
       break;
 
     case "astr":
-      element1.innerHTML = t("KNOWL_DESC_astr");
-      element2.textContent = t("KNOWL_TAB_astr");
+      element1.innerHTML = t("KNOWL_DESC_ASTR");
+      element2.textContent = t("KNOWL_TAB_ASTR");
       break;
 
     case "lite":
@@ -51,4 +51,5 @@ function updateFooter(subjectKey) {
   }
 }
 //}
+
 
