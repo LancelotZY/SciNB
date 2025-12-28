@@ -29,7 +29,7 @@ const I18N = {
     KNOWL_TAB_MATH: "数学",
     KNOWL_TAB_CHEM: "化学",
     KNOWL_TAB_BIOL: "生物",
-    KNOWL_TAB_ASRT: "天文",
+    KNOWL_TAB_ASTR: "天文",
     KNOWL_TAB_LITE: "文学/其他",
 
     KNOWL_DESC_ALL:"无论是文学作品还是理学符号，都是优美的，因为他们给了我们描述我们眼中世界的能力",
@@ -37,7 +37,7 @@ const I18N = {
     KNOWL_DESC_PHYS:"何为物理？析万物之理，我们使用数学的语言，描述这个世界的本质",
     KNOWL_DESC_CHEM:"你以为化学只有一加一等于二？那来看看真正的那些让这个世界沸腾的化学吧！",
     KNOWL_DESC_BIOL:"生命是自然最精妙的造物，在我们仰望星空，思绪远飞的时候，别忘了我们精妙的构造",
-    KNOWL_DESC_ASRT:"当祖先第一次凝视星空的时候，我就已经诞生了。我脱胎于所有学科之前，但是一直服务于未来",
+    KNOWL_DESC_ASTR:"当祖先第一次凝视星空的时候，我就已经诞生了。我脱胎于所有学科之前，但是一直服务于未来",
     KNOWL_DESC_LITE:"当理学的呢喃启蒙了人类的文明，文学的光辉照亮了人类的灵魂，成为万物的灵长，宇宙的精华", 
     
     /**scifi part */
@@ -81,7 +81,7 @@ const I18N = {
     KNOWL_TAB_MATH: "Mathematics",
     KNOWL_TAB_CHEM: "Chemistry",
     KNOWL_TAB_BIOL: "Biology",
-    KNOWL_TAB_ASRT: "Astronomy",
+    KNOWL_TAB_ASTR: "ASTRonomy",
     KNOWL_TAB_LITE: "Literature/Other",
 
     KNOWL_DESC_ALL:"Literature and science share beauty: they let us describe the world.",
@@ -89,7 +89,7 @@ const I18N = {
     KNOWL_DESC_PHYS:"Physics seeks the principles of all things,using mathematics to reveal the essence of reality.",
     KNOWL_DESC_CHEM:"Chemistry is transformation—the force that makes the world ignite.",
     KNOWL_DESC_BIOL:"Life is nature’s finest creation, wonder within as we gaze outward.",
-    KNOWL_DESC_ASRT:"Born with stargazing minds, knowledge precedes disciplines, serving the future.",
+    KNOWL_DESC_ASTR:"Born with stargazing minds, knowledge precedes disciplines, serving the future.",
     KNOWL_DESC_LITE:"Science awakens civilization; literature illuminates the human soul.",    
 
     /**scifi part */
@@ -164,6 +164,7 @@ function initI18n() {
 // 让它自动运行（前提：你用 defer 引入，保证 DOM 已解析）
 window.I18N = I18N;
 initI18n();
+
 
 
 
