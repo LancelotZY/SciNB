@@ -1,4 +1,3 @@
-
 function getCurrentLang() {
   return localStorage.getItem("site_lang") || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
 }
@@ -50,6 +49,20 @@ function updateFooter(subjectKey) {
       break;
   }
 }
-//}
 
+function showContent(key) {
+  // 1. 隐藏所有文章区
+  const sections = document.querySelectorAll(".articles");
+  sections.forEach(sec => {
+    sec.style.display = "none";
+  });
 
+  // 2. 显示当前选中的那一类
+  const target = document.getElementById(key);
+  if (target) {
+    target.style.display = "block";
+  }
+}
+
+//updateFooter("all");
+//showContent("all");
