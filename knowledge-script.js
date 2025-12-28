@@ -39,9 +39,9 @@ function updateFooter(subjectKey) {
       element2.textContent = t("KNOWL_TAB_BIOL");
       break;
 
-    case "asrt":
-      element1.innerHTML = t("KNOWL_DESC_ASRT");
-      element2.textContent = t("KNOWL_TAB_ASRT");
+    case "astr":
+      element1.innerHTML = t("KNOWL_DESC_astr");
+      element2.textContent = t("KNOWL_TAB_astr");
       break;
 
     case "lite":
@@ -51,3 +51,4 @@ function updateFooter(subjectKey) {
   }
 }
 //}
+
