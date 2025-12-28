@@ -64,5 +64,6 @@ function showContent(key) {
   }
 }
 
-//updateFooter("all");
-//showContent("all");
+updateFooter("all");
+showContent("all");
+
