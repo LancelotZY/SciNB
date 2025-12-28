@@ -22,15 +22,15 @@ const I18N = {
     FOOT_CONTACT: "联系方式",
     FOOT_OPEN: "||本网站所有内容致力于开源开放，商业行为将不被提倡||",
 
-    /**konwledge part */
-    KONWL_TITLE: "硬核科普",
-    KONWL_TAB_ALL: "全部",
-    KONWL_TAB_PHYS: "物理",
-    KONWL_TAB_MATH: "数学",
-    KONWL_TAB_CHEM: "化学",
-    KONWL_TAB_BIOL: "生物",
-    KONWL_TAB_ASRT: "天文",
-    KONWL_TAB_LITE: "文学/其他",
+    /**KNOWLedge part */
+    KNOWL_TITLE: "硬核科普",
+    KNOWL_TAB_ALL: "全部",
+    KNOWL_TAB_PHYS: "物理",
+    KNOWL_TAB_MATH: "数学",
+    KNOWL_TAB_CHEM: "化学",
+    KNOWL_TAB_BIOL: "生物",
+    KNOWL_TAB_ASRT: "天文",
+    KNOWL_TAB_LITE: "文学/其他",
 
     KNOWL_DESC_ALL:"无论是文学作品还是理学符号，都是优美的，因为他们给了我们描述我们眼中世界的能力",
     KNOWL_DESC_MATH:"数学是宇宙的语言，用最简单的符号描述最复杂，最奇妙的理论",
@@ -74,15 +74,15 @@ const I18N = {
     FOOT_CONTACT: "Contact",
     FOOT_OPEN: "||This site is open and free; commercial use is discouraged||",
 
-    /**konwledge part */
-    KONWL_TITLE: "Pop Science",
-    KONWL_TAB_ALL: "ALL",
-    KONWL_TAB_PHYS: "Physics",
-    KONWL_TAB_MATH: "Mathematics",
-    KONWL_TAB_CHEM: "Chemistry",
-    KONWL_TAB_BIOL: "Biology",
-    KONWL_TAB_ASRT: "Astronomy",
-    KONWL_TAB_LITE: "Literature/Other",
+    /**KNOWLedge part */
+    KNOWL_TITLE: "Pop Science",
+    KNOWL_TAB_ALL: "ALL",
+    KNOWL_TAB_PHYS: "Physics",
+    KNOWL_TAB_MATH: "Mathematics",
+    KNOWL_TAB_CHEM: "Chemistry",
+    KNOWL_TAB_BIOL: "Biology",
+    KNOWL_TAB_ASRT: "Astronomy",
+    KNOWL_TAB_LITE: "Literature/Other",
 
     KNOWL_DESC_ALL:"Literature and science share beauty: they let us describe the world.",
     KNOWL_DESC_MATH:"Mathematics is the language of the universe,simple symbols, infinite truths.",
@@ -164,5 +164,6 @@ function initI18n() {
 // 让它自动运行（前提：你用 defer 引入，保证 DOM 已解析）
 window.I18N = I18N;
 initI18n();
+
 
 
